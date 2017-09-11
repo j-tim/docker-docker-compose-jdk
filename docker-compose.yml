@@ -1,0 +1,7 @@
+version: '3.2'
+
+services:
+  docker-docker-compose-jdk:
+    image: docker-docker-compose-jdk:8u141
+    build:
+      context: 8u131
