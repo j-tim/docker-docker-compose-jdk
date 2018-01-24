@@ -1,4 +1,4 @@
-# Jtim custom image with Docker, Docker-compose and OpenJDK 8u131
+# Jtim custom image with Docker, Docker-compose and OpenJDK 8u151
 
 ## Supported tags and respective Dockerfile links
 
