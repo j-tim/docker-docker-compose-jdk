@@ -1,4 +1,4 @@
-# Jtim custom Gitlab CI build image with Docker, Docker-compose and OpenJDK 8u151
+# Jtim custom Gitlab CI build image with Docker, Docker-compose and OpenJDK 8u171
 
 ## Supported tags and respective Dockerfile links
 
@@ -23,8 +23,6 @@ Since version `18.05.0-ce-git-compose-1.21.2-openjdk-8u171` this image is not ru
 ```shell
 docker pull jtim/docker-docker-compose-jdk
 ```
-
-## How to use the image
 
 ## How to use the Gitlab Build image
 
