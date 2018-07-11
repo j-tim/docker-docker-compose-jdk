@@ -5,7 +5,7 @@
 ### Latest version
 
 * Docker version: 18.05.0 ce-git
-* Docker compose: 1.18.0
+* Docker compose: 1.21.2
 * Open JDK: 8u171
 
 Since version `18.05.0-ce-git-compose-1.21.2-openjdk-8u171` this image is not running as root anymore!
