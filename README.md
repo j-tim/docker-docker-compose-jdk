@@ -4,13 +4,15 @@
 
 ### Latest version
 
-* Docker version: 18.05.0 ce-git
-* Docker compose: 1.21.2
-* Open JDK: 8u171
+* Docker version: 18.09.1 ce-git-openjdk
+* Docker compose: 1.23.1
+* Open JDK: 8u191
 
 Since version `18.05.0-ce-git-compose-1.21.2-openjdk-8u171` this image is not running as root anymore!
 
-* `18.05.0-ce-git-compose-1.21.2-openjdk-8u171`, `openjdk-8u171`, `openjdk-8`, `8u171` [(latest)](https://github.com/j-tim/docker-docker-compose-jdk/blob/master/8u171/Dockerfile)
+* `18.09.1-ce-git-compose-1.23.1-openjdk-8u191`, `openjdk-8u191`, `openjdk-8`, `8u191` [(latest)](https://github.com/j-tim/docker-docker-compose-jdk/blob/master/8u191/Dockerfile)
+
+* `18.05.0-ce-git-compose-1.21.2-openjdk-8u171`, `openjdk-8u171`,  [(8u171)](https://github.com/j-tim/docker-docker-compose-jdk/blob/master/8u171/Dockerfile)
 
 ### Deprecated images 
 
