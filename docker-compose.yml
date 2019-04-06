@@ -1,7 +1,7 @@
-version: '3.2'
+version: '3.7'
 
 services:
-  docker-docker-compose-jdk:
-    image: jtim/docker-docker-compose-jdk:18.09.1-ce-git-compose-1.23.1-openjdk-8u191
+  docker-docker-compose-jdk-adoptopenjdk-11:
+    image: jtim/docker-docker-compose-jdk:18.09.3-ce-git-compose-1.23.2-adoptopenjdk-11.0.2.9
     build:
-      context: 8u191
+      context: 11.0.2.9/adoptopenjdk
