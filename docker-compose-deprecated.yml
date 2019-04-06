@@ -1,0 +1,28 @@
+version: '3.7'
+
+services:
+
+  ######################################################################################################################
+  # Java 8 - OpenJdk Unsupported
+  ######################################################################################################################
+
+  # Unfortunately Alpine Linux does not keep old packages.
+  # When we try building the older versions of this project you will get this response from apk:
+  # ERROR: unsatisfiable constraints:
+  #  openjdk8-8.201.08-r1:
+  #    breaks: world[openjdk8=8.191.12-r0]
+
+  # Alpine 3.8
+  # http://dl-cdn.alpinelinux.org/alpine/v3.8/community/x86_64/
+  openjdk-8u191:
+    image: jtim/docker-docker-compose-jdk:18.05.0-ce-git-compose-1.21.2-openjdk-8u191
+    build:
+      context: java8/openjdk/deprecated/8u191
+
+  # Alpine 3.7
+  # http://dl-cdn.alpinelinux.org/alpine/v3.7/community/x86_64/
+  # Not supported anymore since the specific openjdk version is not available anymore
+  openjdk-8u171:
+    image: jtim/docker-docker-compose-jdk:18.05.0-ce-git-compose-1.21.2-openjdk-8u171
+    build:
+      context: java8/openjdk/deprecated/8u171
