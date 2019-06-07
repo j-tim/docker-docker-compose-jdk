@@ -10,9 +10,21 @@ services:
     build:
       context: java8/openjdk/8u201
 
-# Java 11 - Adopt Openjdk
+# Java 11 - Adopt Openjdk - Hotspot
 
   docker-docker-compose-jdk-adoptopenjdk-11:
+    image: jtim/docker-docker-compose-jdk:18.09.6-ce-git-compose-1.24.0-adoptopenjdk-11.0.3_7
+    build:
+      context: java11/adoptopenjdk/11.0.3_7/hotspot
+
+  docker-docker-compose-jdk-adoptopenjdk-11.0.2.9:
     image: jtim/docker-docker-compose-jdk:18.09.3-ce-git-compose-1.23.2-adoptopenjdk-11.0.2.9
     build:
-      context: java11/adoptopenjdk/11.0.2.9
+      context: java11/adoptopenjdk/11.0.2.9/hotspot
+
+# Java 11 - OpenJ9
+
+  docker-docker-compose-jdk-adoptopenjdk-11-openj9:
+    image: jtim/docker-docker-compose-jdk:18.09.6-ce-git-compose-1.24.0-adoptopenjdk-11.0.3_7_openj9-0.14.3
+    build:
+      context: java11/adoptopenjdk/11.0.3_7/openJ9/0.14.3
