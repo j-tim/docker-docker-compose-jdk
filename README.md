@@ -4,7 +4,9 @@ Docker image that can be used in Gitlab CI build pipelines and run as non root!
 We have support for both:
  
 * Java 8 (Open JDK) 
-* Java 11 (Adopt Openjdk)
+* Java 11 (AdoptOpenJdk)
+  * Hotspot
+  * OpenJ9
 
 ## Java 8 version images contains 
 
@@ -15,9 +17,9 @@ We have support for both:
 
 ## Java 11 (latest) version images contains 
 
-* Docker version: 18.09.3 ce
-* Docker compose: 1.23.2
-* Adopt Open JDK: 11.0.2.9
+* Docker version: 18.09.6 ce
+* Docker compose: 1.24.0
+* Adopt Open JDK: 11.0.3+7 (hotspot or Open9J)
 * Git: 2.17.1
 
 ## Notes
@@ -38,7 +40,15 @@ So we consider our images deprecated when the openjdk apk packages are not avail
 
 #### Java 11
 
-* `18.09.3-ce-git-compose-1.23.2-adoptopenjdk-11.0.2.9`, `adoptopenjdk-11.0.2.9`, `adoptopenjdk-11`, `11.0.2.9` [(latest)](https://github.com/j-tim/docker-docker-compose-jdk/blob/master/java11/adoptopenjdk/11.0.2.9/Dockerfile)
+**Hotspot**
+
+* `18.09.6-ce-git-compose-1.24.0-adoptopenjdk-11.0.3_7`, `adoptopenjdk-11.0.3_7`, `adoptopenjdk-11`, `11.0.3.7` [(latest)](https://github.com/j-tim/docker-docker-compose-jdk/blob/master/java11/adoptopenjdk/11.0.3_7/hotspot/Dockerfile)
+
+* `18.09.3-ce-git-compose-1.23.2-adoptopenjdk-11.0.2.9`, `adoptopenjdk-11.0.2.9`, `11.0.2.9` [(latest)](https://github.com/j-tim/docker-docker-compose-jdk/blob/master/java11/adoptopenjdk/11.0.2.9/hotspot/Dockerfile)
+
+**OpenJ9**
+
+* `18.09.6-ce-git-compose-1.24.0-adoptopenjdk-11.0.3_7_openj9-0.14.3`, `adoptopenjdk-11.0.3_7-openj9`,  [(adoptopenjdk-11-openj9)](https://github.com/j-tim/docker-docker-compose-jdk/blob/master/java11/adoptopenjdk/11.0.3_7/open9J/Dockerfile)
 
 #### Java 8
 
