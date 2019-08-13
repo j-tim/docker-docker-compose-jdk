@@ -83,6 +83,8 @@ java-docker-job:
     - whoami
     - docker -v
     - docker-compose -v
+    - echo $CI_JOB_TOKEN | docker login -u gitlab-ci-token --password-stdin registry.gitlab.com
+    - echo $DOCKER_HOST
     - java -version
     - git version
 ```
