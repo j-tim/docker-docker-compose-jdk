@@ -8,8 +8,7 @@ ENV NON_ROOT_CONTAINER_USER bob-the-builder
 ENV DOCKER_COMPOSE_VERSION 1.23.2
 ENV DOCKER_COMPOSE_BASE_DOWNLOAD_URL https://github.com/docker/compose/releases/download
 
-RUN groupadd -g 1000 ${NON_ROOT_CONTAINER_USER} && \
-    useradd -u 1000 ${NON_ROOT_CONTAINER_USER} -g ${NON_ROOT_CONTAINER_USER}
+RUN useradd -rm -d /home/${NON_ROOT_CONTAINER_USER} -s /bin/bash -g root -G sudo -u 1000 ${NON_ROOT_CONTAINER_USER}
 
 RUN apt update \
     && apt install -y apt-transport-https ca-certificates curl gnupg-agent software-properties-common \
@@ -25,3 +24,4 @@ RUN apt update \
 
 # Switch to non root user
 USER $NON_ROOT_CONTAINER_USER
+WORKDIR /home/${NON_ROOT_CONTAINER_USER}
