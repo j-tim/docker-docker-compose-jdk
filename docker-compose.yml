@@ -4,6 +4,12 @@ services:
 
 # Java 8 - OpenJdk
 
+  # Alpine 3.12
+  openjdk-8u252:
+    image: jtim/docker-docker-compose-jdk:20.10.2-compose-1.28.0-openjdk-8u252
+    build:
+      context: java8/openjdk/8u252
+
   # Alpine 3.8
   openjdk-8u201:
     image: jtim/docker-docker-compose-jdk:18.05.0-ce-git-compose-1.21.2-openjdk-8u191

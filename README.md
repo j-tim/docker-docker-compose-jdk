@@ -10,10 +10,12 @@ We have support for both:
 
 ## Java 8 version images contains 
 
-* Docker version: 18.09.1 ce
-* Docker compose: 1.23.1
-* Open JDK: 8u201
-* Git: 2.18.1
+* Docker version: 20.10.2 ce
+* Docker compose: 1.28.0
+* Open JDK: 8u252
+* Git: 2.26.2
+* Jq: jq-master-v20200428-28-g864c859e9d
+* Pack: 0.16.0+git-e0f6c50.build-1898
 
 ## Java 11 (latest) version images contains 
 
@@ -52,10 +54,11 @@ So we consider our images deprecated when the openjdk apk packages are not avail
 
 #### Java 8
 
-* `18.09.1-ce-git-compose-1.23.1-openjdk-8u201`, `openjdk-8u201`, `openjdk-8`, [(8u201)](https://github.com/j-tim/docker-docker-compose-jdk/blob/master/java8/openjdk/8u201/Dockerfile)
+* `20.10.2-ce-git-compose-1.28.0-openjdk-8u252`, `openjdk-8u252`, `openjdk-8`, [(8u252)](https://github.com/j-tim/docker-docker-compose-jdk/blob/master/java8/openjdk/8u252/Dockerfile)
 
 ### Deprecated images 
 
+* `18.09.1-ce-git-compose-1.23.1-openjdk-8u201`, `openjdk-8u201`, `openjdk-8`, [(8u201)](https://github.com/j-tim/docker-docker-compose-jdk/blob/master/java8/openjdk/8u201/Dockerfile)
 * `18.09.1-ce-git-compose-1.23.1-openjdk-8u191`, `openjdk-8u191`, [(8u191)](https://github.com/j-tim/docker-docker-compose-jdk/blob/master/java8/openjdk/deprecated/8u191/Dockerfile)
 * `18.05.0-ce-git-compose-1.21.2-openjdk-8u171`, `openjdk-8u171`,  [(8u171)](https://github.com/j-tim/docker-docker-compose-jdk/blob/master/java8/openjdk/deprecated/8u171/Dockerfile)
 * `18.01.0-compose-1.18.0-openjdk-8u151`, `openjdk-8u151`, [(8u151)](https://github.com/j-tim/docker-docker-compose-jdk/blob/master/java8/openjdk/deprecated/8u151/Dockerfile)  
