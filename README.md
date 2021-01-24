@@ -54,7 +54,7 @@ So we consider our images deprecated when the openjdk apk packages are not avail
 
 #### Java 8
 
-* `20.10.2-ce-git-compose-1.28.0-openjdk-8u252`, `openjdk-8u252`, `openjdk-8`, [(8u252)](https://github.com/j-tim/docker-docker-compose-jdk/blob/master/java8/openjdk/8u252/Dockerfile)
+* `20.10.2-ce-git-compose-1.28.0-openjdk-8u252`, `20.10.2-compose-1.28.0-openjdk-8u252` `openjdk-8u252`, `openjdk-8`, [(8u252)](https://github.com/j-tim/docker-docker-compose-jdk/blob/master/java8/openjdk/8u252/Dockerfile)
 
 ### Deprecated images 
 
