@@ -90,6 +90,8 @@ java-docker-job:
     - echo $DOCKER_HOST
     - java -version
     - git version
+    - jq --version
+    - pack --version
 ```
 
 ## Related images
