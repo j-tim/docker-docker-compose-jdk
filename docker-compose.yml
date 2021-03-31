@@ -10,15 +10,14 @@ services:
     build:
       context: java8/openjdk/8u252
 
-  # Alpine 3.8
-  openjdk-8u201:
-    image: jtim/docker-docker-compose-jdk:18.05.0-ce-git-compose-1.21.2-openjdk-8u191
-    build:
-      context: java8/openjdk/8u201
-
 # Java 11 - Adopt Openjdk - Hotspot
 
   docker-docker-compose-jdk-adoptopenjdk-11:
+    image: jtim/docker-docker-compose-jdk:20.10.5-compose-1.28.6-adoptopenjdk-11.0.10_9
+    build:
+      context: java11/adoptopenjdk/11.0.10_9/hotspot
+
+  docker-docker-compose-jdk-adoptopenjdk-11.0.3_7:
     image: jtim/docker-docker-compose-jdk:18.09.6-ce-git-compose-1.24.0-adoptopenjdk-11.0.3_7
     build:
       context: java11/adoptopenjdk/11.0.3_7/hotspot
@@ -31,6 +30,12 @@ services:
 # Java 11 - OpenJ9
 
   docker-docker-compose-jdk-adoptopenjdk-11-openj9:
-    image: jtim/docker-docker-compose-jdk:18.09.6-ce-git-compose-1.24.0-adoptopenjdk-11.0.3_7_openj9-0.14.3
+    image: jtim/docker-docker-compose-jdk:20.10.5-compose-1.28.6-adoptopenjdk-11.0.9.1_1_openj9-0.23.0
+    build:
+      context: java11/adoptopenjdk/11.0.10_9/openJ9
+
+  docker-docker-compose-jdk-adoptopenjdk-11.0.3_7-openj9:
+#    image: jtim/docker-docker-compose-jdk:18.09.6-ce-git-compose-1.24.0-adoptopenjdk-11.0.3_7_openj9-0.14.3
+    image: jtim/docker-docker-compose-jdk:19.03.1-compose-1.24.0-adoptopenjdk-11.0.3_7_openj9-0.14.3
     build:
       context: java11/adoptopenjdk/11.0.3_7/openJ9/0.14.3

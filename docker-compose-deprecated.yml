@@ -13,6 +13,12 @@ services:
   #    breaks: world[openjdk8=8.191.12-r0]
 
   # Alpine 3.8
+  openjdk-8u201:
+    image: jtim/docker-docker-compose-jdk:18.05.0-ce-git-compose-1.21.2-openjdk-8u191
+    build:
+      context: java8/openjdk/8u201
+
+  # Alpine 3.8
   # http://dl-cdn.alpinelinux.org/alpine/v3.8/community/x86_64/
   openjdk-8u191:
     image: jtim/docker-docker-compose-jdk:18.05.0-ce-git-compose-1.21.2-openjdk-8u191
