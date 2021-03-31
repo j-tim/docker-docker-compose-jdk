@@ -49,11 +49,14 @@ So we consider our images deprecated when the openjdk apk packages are not avail
 
 * `18.09.6-ce-git-compose-1.24.0-adoptopenjdk-11.0.3_7`, `adoptopenjdk-11.0.3_7`, `adoptopenjdk-11`, [(11.0.3.7)](https://github.com/j-tim/docker-docker-compose-jdk/blob/master/java11/adoptopenjdk/11.0.3_7/hotspot/Dockerfile)
 
-* `18.09.3-ce-git-compose-1.23.2-adoptopenjdk-11.0.2.9`, `adoptopenjdk-11.0.2.9`, `11.0.2.9` [(latest)](https://github.com/j-tim/docker-docker-compose-jdk/blob/master/java11/adoptopenjdk/11.0.2.9/hotspot/Dockerfile)
+* `18.09.3-ce-git-compose-1.23.2-adoptopenjdk-11.0.2.9`, `adoptopenjdk-11.0.2.9`, [(11.0.2.9)](https://github.com/j-tim/docker-docker-compose-jdk/blob/master/java11/adoptopenjdk/11.0.2.9/hotspot/Dockerfile)
 
 **OpenJ9**
 
-* `18.09.6-ce-git-compose-1.24.0-adoptopenjdk-11.0.3_7_openj9-0.14.3`, `adoptopenjdk-11.0.3_7-openj9`,  [(adoptopenjdk-11-openj9)](https://github.com/j-tim/docker-docker-compose-jdk/blob/master/java11/adoptopenjdk/11.0.3_7/open9J/Dockerfile)
+* `20.10.5-compose-1.28.6-adoptopenjdk-11.0.9.1_1_openj9-0.23.0`, `adoptopenjdk-11.0.9.1_1_openj9-0.23.0`, `adoptopenjdk-11-openj9`, [(11.0.9.1_1_openj9-0.23.0)](https://github.com/j-tim/docker-docker-compose-jdk/blob/master/java11/adoptopenjdk/11.0.10_9/openJ9/Dockerfile)
+
+
+* `18.09.6-ce-git-compose-1.24.0-adoptopenjdk-11.0.3_7_openj9-0.14.3`, `adoptopenjdk-11.0.3_7-openj9`,  [(adoptopenjdk-11-openj9)](https://github.com/j-tim/docker-docker-compose-jdk/blob/master/java11/adoptopenjdk/11.0.3_7/openJ9/0.14.3/Dockerfile)
 
 #### Java 8
 
