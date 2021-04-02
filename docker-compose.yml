@@ -35,7 +35,6 @@ services:
       context: java11/adoptopenjdk/11.0.10_9/openJ9
 
   docker-docker-compose-jdk-adoptopenjdk-11.0.3_7-openj9:
-#    image: jtim/docker-docker-compose-jdk:18.09.6-ce-git-compose-1.24.0-adoptopenjdk-11.0.3_7_openj9-0.14.3
     image: jtim/docker-docker-compose-jdk:19.03.1-compose-1.24.0-adoptopenjdk-11.0.3_7_openj9-0.14.3
     build:
       context: java11/adoptopenjdk/11.0.3_7/openJ9/0.14.3
