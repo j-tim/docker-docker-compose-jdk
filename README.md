@@ -15,6 +15,7 @@ We have support for both:
 * Adopt Open JDK: 11.0.9+11 (Hotspot or Open9J)
 * Git: 2.25.1
 * Jq: 1.6
+* Pack: 0.18.0+git-e00ee4a.build-2328
 
 ## Java 8 version images contains 
 
