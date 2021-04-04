@@ -21,6 +21,10 @@ ENV PATH $PATH:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openj
 ENV JAVA_VERSION 8u252
 ENV JAVA_ALPINE_VERSION 8.252.09-r0
 
+ENV DOCKER_HOST tcp://docker:2375
+ENV DOCKER_DRIVER overlay2
+ENV DOCKER_TLS_CERTDIR ""
+
 RUN set -x \
     && apk update \
     && apk upgrade \

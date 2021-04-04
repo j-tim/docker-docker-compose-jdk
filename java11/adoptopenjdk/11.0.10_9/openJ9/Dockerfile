@@ -3,7 +3,9 @@ FROM adoptopenjdk/openjdk11-openj9:jdk-11.0.9_11_openj9-0.23.0
 # Default to UTF-8 file.encoding
 ENV LANG C.UTF-8
 
-ENV DOCKER_HOST tcp://docker:2375/
+ENV DOCKER_HOST tcp://docker:2375
+ENV DOCKER_DRIVER overlay2
+ENV DOCKER_TLS_CERTDIR ""
 
 # Setup the non root user and group
 ENV NON_ROOT_CONTAINER_USER bob-the-builder

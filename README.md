@@ -101,6 +101,15 @@ java-docker-job:
     - pack --version
 ```
 
+You don't need to set these variables in your pipeline we already set them in the Docker images:
+
+```yml
+variables:
+  DOCKER_HOST: tcp://docker:2375
+  DOCKER_DRIVER: overlay2
+  DOCKER_TLS_CERTDIR: ""
+```
+
 ## Related images
 
 In case you just need Docker and Docker compose (non root) see: 
