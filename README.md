@@ -1,12 +1,17 @@
 # Jtim custom Gitlab CI build image with Docker, Docker-compose and (Adopt) OpenJDK 
 
 Docker image that can be used in Gitlab CI build pipelines and run as non root!
-We have support for both:
  
-* Java 11 (AdoptOpenJdk)
-  * Hotspot
-  * OpenJ9
-* Java 8 (Open JDK)
+* Java 17 (OpenJDK Temurin)
+
+## Java 17 (latest) version images contains
+
+* Docker version: 24.0.2, build cb74dfc
+* Docker compose: v2.18.1
+* JDK: Temurin-17.0.7+7 (OpenJDK Temurin)
+* Git: 2.34.1
+* Jq: 1.6
+* Pack: 0.29.0+git-95c8060.build-4209
 
 ## Java 11 (latest) version images contains
 
@@ -42,11 +47,21 @@ So we consider our images deprecated when the openjdk apk packages are not avail
 
 ### Supported versions
 
-#### Java 11
+#### Java 17
+
+**OpenJDK Temurin**
+
+`24.0.2-compose-2.18.1-openjdk-17`, `openjdk-17`, [(latest)](https://github.com/j-tim/docker-docker-compose-jdk/blob/master/java17/eclipse-temurin/Dockerfile)
+
+```
+docker pull jtim/docker-docker-compose-jdk:24.0.2-compose-2.18.1-jdk-17
+```
+
+### Deprecated images
 
 **Hotspot**
 
-* `20.10.5-compose-1.28.6-adoptopenjdk-11.0.10_9`, `adoptopenjdk-11.0.10_9`, `adoptopenjdk-11`, `11.0.10_9` [(latest)](https://github.com/j-tim/docker-docker-compose-jdk/blob/master/java11/adoptopenjdk/11.0.10_9/hotspot/Dockerfile)
+* `20.10.5-compose-1.28.6-adoptopenjdk-11.0.10_9`, `adoptopenjdk-11.0.10_9`, `adoptopenjdk-11`, `11.0.` [(10_9)](https://github.com/j-tim/docker-docker-compose-jdk/blob/master/java11/adoptopenjdk/11.0.10_9/hotspot/Dockerfile)
 
 * `18.09.6-ce-git-compose-1.24.0-adoptopenjdk-11.0.3_7`, `adoptopenjdk-11.0.3_7`, `adoptopenjdk-11`, [(11.0.3.7)](https://github.com/j-tim/docker-docker-compose-jdk/blob/master/java11/adoptopenjdk/11.0.3_7/hotspot/Dockerfile)
 
@@ -63,7 +78,6 @@ So we consider our images deprecated when the openjdk apk packages are not avail
 
 * `20.10.2-ce-git-compose-1.28.0-openjdk-8u252`, `20.10.2-compose-1.28.0-openjdk-8u252` `openjdk-8u252`, `openjdk-8`, [(8u252)](https://github.com/j-tim/docker-docker-compose-jdk/blob/master/java8/openjdk/8u252/Dockerfile)
 
-### Deprecated images 
 
 * `18.09.1-ce-git-compose-1.23.1-openjdk-8u201`, `openjdk-8u201`, `openjdk-8`, [(8u201)](https://github.com/j-tim/docker-docker-compose-jdk/blob/master/java8/openjdk/8u201/Dockerfile)
 * `18.09.1-ce-git-compose-1.23.1-openjdk-8u191`, `openjdk-8u191`, [(8u191)](https://github.com/j-tim/docker-docker-compose-jdk/blob/master/java8/openjdk/deprecated/8u191/Dockerfile)
